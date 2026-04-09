@@ -1,0 +1,3 @@
+{
+  "extends": "@Synap/config/tsconfig.base.json"
+}

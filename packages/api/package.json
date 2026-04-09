@@ -1,0 +1,29 @@
+{
+  "name": "@Synap/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@Synap/db": "workspace:*",
+    "@Synap/env": "workspace:*",
+    "@clerk/backend": "^3.2.1",
+    "@orpc/client": "catalog:",
+    "@orpc/openapi": "catalog:",
+    "@orpc/server": "catalog:",
+    "@orpc/zod": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@Synap/config": "workspace:*",
+    "hono": "catalog:",
+    "typescript": "^5"
+  }
+}
