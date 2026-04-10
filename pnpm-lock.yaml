@@ -139,6 +139,9 @@ importers:
       '@Synap/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@clerk/localizations':
+        specifier: ^4.4.0
+        version: 4.4.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@clerk/nextjs':
         specifier: ^7.0.5
         version: 7.0.12(next@16.2.3(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -520,6 +523,10 @@ packages:
 
   '@clerk/backend@3.2.8':
     resolution: {integrity: sha512-N9yqCQCdkn/4XpfiVnaoS6wXDeC2yQf85ioHGolOIOCWXOPwMd63fONUfRhwOZSlXGTAsgyUNZu87Ps0tcVYsg==}
+    engines: {node: '>=20.9.0'}
+
+  '@clerk/localizations@4.4.0':
+    resolution: {integrity: sha512-LU18/Dg/VOgtyU+ZG+Eeqdsl0VSN0RGthp4aBCFSRsQV206YLEFN2Z+z2tAVaNUzH/nv1jSftU6kEnphllSCww==}
     engines: {node: '>=20.9.0'}
 
   '@clerk/nextjs@7.0.12':
@@ -3735,6 +3742,13 @@ snapshots:
       '@clerk/shared': 4.6.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       standardwebhooks: 1.0.0
       tslib: 2.8.1
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
+  '@clerk/localizations@4.4.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@clerk/shared': 4.6.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
     transitivePeerDependencies:
       - react
       - react-dom

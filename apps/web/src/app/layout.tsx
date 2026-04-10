@@ -1,4 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
+import { idID } from "@clerk/localizations";
 import type { Metadata } from "next";
 
 import "../index.css";
@@ -28,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClerkProvider>
+        <ClerkProvider localization={idID}>
           <Providers>
             <div className="grid grid-rows-[auto_1fr] h-svh">
               <Header />
