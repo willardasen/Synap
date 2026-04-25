@@ -12,23 +12,23 @@ export default function Home() {
   const healthCheck = useQuery(orpc.healthCheck.queryOptions());
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans">
+    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans overflow-x-hidden">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-950">
+        <section className="relative overflow-hidden py-12 sm:py-20 lg:py-32 xl:pb-36 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-950">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div className="mx-auto max-w-3xl">
-              <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
                 <span className="block text-slate-900 dark:text-white">WhatsApp Otonom</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
                   AI Pengetahuan Produk
                 </span>
               </h1>
-              <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
+              <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-slate-600 dark:text-slate-300">
                 Ubah WhatsApp Anda menjadi agen penjualan dan dukungan pelanggan cerdas yang beroperasi 24/7.
                 Synap menghubungkan katalog produk Anda ke AI yang mampu menjawab pertanyaan, mengecek harga, dan menangani pelanggan secara real-time.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
                 <Link href="/dashboard">
                   <Button size="lg" className="rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-lg shadow-blue-500/30 transition-all hover:scale-105">
                     Masuk ke Dashboard <ArrowRight className="ml-2 h-4 w-4" />
@@ -63,13 +63,13 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-24 sm:py-32">
+        <section className="py-16 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl lg:text-4xl">
                 Segala hal yang Anda butuhkan untuk otomasi WhatsApp
               </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-slate-600 dark:text-slate-300">
                 Platform AI-as-a-Service kami menyajikan kontrol multi-tenant, pipeline RAG terotomatisasi, serta dashboard menawan untuk mengelola semuanya dengan mudah.
               </p>
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
       
       {/* Basic Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-        <div className="mx-auto max-w-7xl px-6 py-12 flex items-center justify-between lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-8 sm:py-12 flex flex-col sm:flex-row items-center justify-between gap-4 lg:px-8">
           <div className="flex items-center justify-center gap-2">
             <div className="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center">
               <Zap className="h-4 w-4 text-white" />

@@ -91,8 +91,8 @@ export default function Dashboard() {
       </div>
 
       {/* Main Content Area */}
-      <div className="grid gap-6 lg:grid-cols-7">
-        <Card className="lg:col-span-4 border-none shadow-md shadow-slate-200/40 dark:shadow-none bg-white dark:bg-slate-900">
+      <div className="grid gap-6 md:grid-cols-7">
+        <Card className="md:col-span-4 border-none shadow-md shadow-slate-200/40 dark:shadow-none bg-white dark:bg-slate-900">
           <CardHeader>
             <CardTitle>Koneksi API</CardTitle>
             <CardDescription>
@@ -115,7 +115,7 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
-        <Card className="lg:col-span-3 border-none shadow-md shadow-slate-200/40 dark:shadow-none bg-white dark:bg-slate-900">
+        <Card className="md:col-span-3 border-none shadow-md shadow-slate-200/40 dark:shadow-none bg-white dark:bg-slate-900">
           <CardHeader>
             <CardTitle>Aktivitas Terkini</CardTitle>
             <CardDescription>

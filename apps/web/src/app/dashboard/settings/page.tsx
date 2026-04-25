@@ -8,8 +8,8 @@ export default function SettingsPage() {
   return (
     <div className="max-w-4xl space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Pengaturan</h1>
-        <p className="text-slate-500 dark:text-slate-400 mt-1">Atur persona AI, koneksi WhatsApp, dan pengaturan ruang kerja Anda.</p>
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Pengaturan</h1>
+        <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 mt-1">Atur persona AI, koneksi WhatsApp, dan pengaturan ruang kerja Anda.</p>
       </div>
 
       <div className="grid gap-6">
@@ -31,7 +31,7 @@ export default function SettingsPage() {
                 type="text" 
                 defaultValue="Synap Agent"
                 disabled
-                className="rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white px-3 py-2 text-sm"
+                className="w-full rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white px-3 py-2 text-sm"
               />
               <p className="text-xs text-slate-500">Nama yang akan digunakan oleh agen Anda jika ditanya identitasnya oleh pelanggan.</p>
             </div>
@@ -65,12 +65,12 @@ export default function SettingsPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center justify-between p-4 border border-slate-200 dark:border-slate-800 rounded-lg block">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 border border-slate-200 dark:border-slate-800 rounded-lg">
               <div className="space-y-1">
                 <p className="text-sm font-medium text-slate-900 dark:text-white">Belum Terhubung</p>
                 <p className="text-xs text-slate-500">Tautkan akun bisnis Anda untuk mulai membalas pesan otomatis.</p>
               </div>
-              <Button variant="outline" className="text-green-600 border-green-200 hover:bg-green-50 dark:border-green-900 dark:hover:bg-green-900/30">Hubungkan WABA</Button>
+              <Button variant="outline" className="text-green-600 border-green-200 hover:bg-green-50 dark:border-green-900 dark:hover:bg-green-900/30 w-full sm:w-auto shrink-0">Hubungkan WABA</Button>
             </div>
           </CardContent>
         </Card>

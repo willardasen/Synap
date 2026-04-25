@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ClerkProvider localization={idID}>
           <Providers>
-            <div className="grid grid-rows-[auto_1fr] h-svh">
+            <div className="grid grid-rows-[auto_1fr] h-svh overflow-x-hidden">
               <Header />
               {children}
             </div>
